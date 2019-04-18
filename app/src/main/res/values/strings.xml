@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LAT2_AKB11_10116488_MAMUNBASYARI</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="repassword">Retype Password</string>
+    <string name="email">Email</string>
+    <string name="number">Phone Number</string>
+
+    <string-array name="bloodtype">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB</item>
+    </string-array>
+    <string-array name="reshus">
+        <item>Reshus</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB</item>
+    </string-array>
+</resources>

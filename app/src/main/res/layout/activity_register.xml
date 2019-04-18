@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <!--Nama : Ma'mun Basayri
+        Kelas : AKB-11
+        NIM : 10116488 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/ic_header">
+            <ImageView
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_header_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/body"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp">
+
+            <EditText
+                android:id="@+id/usernama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:paddingBottom="13dp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_below="@id/usernama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:paddingBottom="13dp"
+                />
+            <EditText
+                android:id="@+id/txtnumber"
+                android:layout_below="@id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/number"
+                android:paddingBottom="15dp"
+                />
+            <RadioGroup
+                android:id="@+id/rdoBtn"
+                android:layout_below="@id/txtnumber"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingStart="15dp"
+                    android:buttonTint="@color/blueSky"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingStart="15dp"
+                    android:buttonTint="@color/blueSky"
+                    android:text="Female" />
+            </RadioGroup>
+            <Spinner
+                android:id="@+id/blood"
+                android:layout_below="@id/rdoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/bloodtype"
+                android:paddingRight="55dp" />
+            <Spinner
+                android:id="@+id/reshus"
+                android:layout_below="@id/rdoBtn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="85dp"
+                android:entries="@array/reshus"/>
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_below="@id/blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:paddingBottom="15dp"
+                />
+            <EditText
+                android:id="@+id/txtRepassword"
+                android:layout_below="@id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repassword"
+                android:paddingBottom="15dp"
+                />
+            <RadioGroup
+                android:id="@+id/rdoBtn2"
+                android:layout_below="@id/txtRepassword"
+                android:gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:buttonTint="@color/blueSky"
+                android:paddingStart="15dp"
+                android:text="Personal"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingStart="15dp"
+                android:buttonTint="@color/blueSky"
+                android:text="Organization"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/txtJob"
+                android:layout_below="@id/rdoBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Address"
+                android:paddingBottom="13dp"
+                />
+            <EditText
+                android:id="@+id/txtLocation"
+                android:layout_below="@id/txtJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Default Location"
+                android:drawableRight="@drawable/ic_blood_needed_location"
+                android:paddingBottom="13dp"
+                />
+            <CheckBox
+                android:id="@+id/chkBox"
+                android:layout_below="@id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blueSky"
+                android:paddingStart="15dp"
+                android:text="Aggre Terms and Conditions"
+                />
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_below="@id/chkBox"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blueSky"
+                android:onClick="Register"
+                android:text="REGISTER"
+                android:background="@drawable/button_regis"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

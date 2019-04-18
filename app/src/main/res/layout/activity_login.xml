@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!--Nama : Ma'mun Basayri
+        Kelas : AKB-11
+        NIM : 10116488 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueSky"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="45dp">
+
+        <ImageView
+            android:id="@+id/bloodShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_welcome_logo"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bloodShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="@string/username"
+            android:paddingBottom="30dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:paddingBottom="30dp"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_welcome"
+            android:layout_below="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:onClick="login"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/atau"
+            android:layout_below="@id/login"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="OR"/>
+
+        <LinearLayout
+            android:id="@+id/fb"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/atau"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/button_welcome">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_welcome_fb_login"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="CONECT WITH FACEBOOK"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/regis"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fb"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="doesnt't have account ? "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:onClick="Register"
+                    android:text="Register"/>
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

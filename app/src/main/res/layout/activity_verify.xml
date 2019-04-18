@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity">
+
+    <!--Nama : Ma'mun Basayri
+        Kelas : AKB-11
+        NIM : 10116488 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/blueSky">
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="32dp"
+            android:text="Verify your Account"/>
+        <TextView
+            android:id="@+id/veri"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/account"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="We have send verification code to your email"/>
+        <EditText
+            android:id="@+id/code"
+            android:layout_below="@id/veri"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:paddingBottom="15dp"
+            android:hint="enter verification code here..."
+            />
+        <Button
+            android:onClick="send"
+            android:id="@+id/send"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_below="@id/code"
+            android:background="@drawable/button_welcome"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/getcode"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/send"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="doesn't get code? Resend"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

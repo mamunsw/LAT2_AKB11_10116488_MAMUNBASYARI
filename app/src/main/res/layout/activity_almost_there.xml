@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blueSky"
+    tools:context=".AlmostThereActivity">
+
+    <!--Nama : Ma'mun Basayri
+        Kelas : AKB-11
+        NIM : 10116488 -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/almost"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:text="Almost There"/>
+    <TextView
+        android:id="@+id/thank"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/almost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="Thank you for registering with us, One more"/>
+    <TextView
+        android:id="@+id/step"
+        android:layout_below="@id/thank"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="step. You need to check your email"/>
+    <TextView
+        android:id="@+id/active"
+        android:layout_below="@id/step"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="to active your account"/>
+    <Button
+        android:onClick="Verify"
+        android:layout_below="@id/active"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_welcome"
+        android:text="VERIFY"/>
+</RelativeLayout>
+
+</LinearLayout>
